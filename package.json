@@ -1,0 +1,9 @@
+{
+  "name": "my-cicd-app",
+  "version": "1.0.0",
+  "description": "My Jenkins EC2 CI/CD Pipeline App",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  }
+}
