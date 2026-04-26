@@ -54,7 +54,7 @@ pipeline {
                     scp -o StrictHostKeyChecking=no -i /var/lib/jenkins/my-ec2-key.pem \
                         build.tar ec2-user@YOUR_EC2_PUBLIC_IP:/home/ec2-user/
                     ssh -o StrictHostKeyChecking=no -i /var/lib/jenkins/my-ec2-key.pem \
-                        ec2-user@YOUR_EC2_PUBLIC_IP '
+                        ec2-user@15.206.178.205 '
                         echo "Artifact received on EC2:"
                         ls -lh build.tar
                     '
@@ -66,7 +66,7 @@ pipeline {
             steps {
                 sh '''
                     ssh -o StrictHostKeyChecking=no -i /var/lib/jenkins/my-ec2-key.pem \
-                        ec2-user@YOUR_EC2_PUBLIC_IP '
+                        ec2-user@15.206.178.205 '
                         echo "Stopping any running node process..."
                         pkill node || true
                         rm -rf myapp
