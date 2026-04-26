@@ -12,7 +12,7 @@ pipeline {
         stage('Clone Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/YOUR_GITHUB_USERNAME/my-jenkins-ec2-pipeline.git'
+                    url: 'https://github.com/BhargavLende15/cicd-pipeline.git'
             }
         }
 
